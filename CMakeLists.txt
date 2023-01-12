@@ -9,8 +9,6 @@ set(_main "${_path}/BoxApp.cpp")
 file(GLOB _files "${_path}/Common/*.cpp")
 include_directories("${_path}/Common")
 
-cmake_print_variables(_main)
-
 get_filename_component(_name "DX12_SKELETON" NAME)
 add_executable(${_name} WIN32 ${_files} ${_main})
 
