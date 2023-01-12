@@ -1,3 +1,0 @@
-C:/Users/Shaokang/OneDrive/文档/DX12 SKELETON/build/CMakeFiles/DX12_SKELETON.dir
-C:/Users/Shaokang/OneDrive/文档/DX12 SKELETON/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Shaokang/OneDrive/文档/DX12 SKELETON/build/CMakeFiles/ZERO_CHECK.dir
