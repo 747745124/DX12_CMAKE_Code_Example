@@ -5,7 +5,7 @@ include(CMakePrintHelpers)
 
 # find_package(Git REQUIRED)
 set(_path "${CMAKE_SOURCE_DIR}")
-set(_main "${_path}/BoxApp.cpp")
+set(_main "${_path}/checkGraphicsCard.cpp")
 file(GLOB _files "${_path}/Common/*.cpp")
 include_directories("${_path}/Common")
 
