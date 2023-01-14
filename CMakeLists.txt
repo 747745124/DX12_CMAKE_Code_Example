@@ -5,12 +5,15 @@ include(CMakePrintHelpers)
 
 # find_package(Git REQUIRED)
 set(_path "${CMAKE_SOURCE_DIR}")
-set(_main "${_path}/checkGraphicsCard.cpp")
+set(_main "${_path}/BoxApp.cpp")
 file(GLOB _files "${_path}/Common/*.cpp")
+file(GLOB _imgui_files "${_path}/External/imgui/*.cpp")
 include_directories("${_path}/Common")
+include_directories("${_path}/External/imgui")
+include_directories("${_path}/gui")
 
 get_filename_component(_name "DX12_SKELETON" NAME)
-add_executable(${_name} WIN32 ${_files} ${_main})
+add_executable(${_name} WIN32 ${_files} ${_main} ${_imgui_files})
 
 target_compile_definitions(${_name} PRIVATE "UNICODE" "_UNICODE")
 target_link_libraries(${_name} PRIVATE "d3d12.lib" "dxgi.lib" "d3dcompiler.lib")
